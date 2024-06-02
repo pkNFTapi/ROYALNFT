@@ -105,6 +105,6 @@ contract ROYAL1155 is ERC1155, Ownable, ReentrancyGuard {
     }
 
     function _setURI(uint256 tokenId, string memory tokenURI) internal virtual {
-        // Placeholder for setting URI per tokenId if needed
+        // Placeholder for setting URI per tokenId as needed
     }
 }
