@@ -5,6 +5,19 @@ enabling every owner as creator<br />
 The ROYALNFT.sol contract effectively enables a decentralized marketplace for unique digital assets using the ERC721 standard. It emphasizes the role of every NFT owner not just as a holder but as an active participant in the marketplace, with the capability to manage transactions directly related to their assets. Here's a concise overview of its utility and functions:
 
 The ROYALNFT contract is an Ethereum-based smart contract developed for handling ERC721 tokens, which represent unique digital assets, underpinned by the OpenZeppelin libraries to ensure robust security and functionality. This contract integrates features such as token minting, dynamic pricing, secure sales transactions, and royalty distributions, catering to a decentralized marketplace where creators and deployers can derive ongoing value from secondary sales. Here is an external documentation detailing the structure and utility of the ROYALNFT contract:
+
+Utility and Use Cases
+
+ROYALNFT is particularly suited for digital marketplaces dealing in unique digital assets like art, collectibles, and other NFT-backed items. It provides artists and creators with a platform to monetize their work not only through initial sales but also via ongoing royalties from subsequent transactions. The secure and decentralized trading mechanism empowers owners and maintains the integrity of transactions, fostering a robust digital economy around NFTs.
+
+Utility of the Contract
+
+    Royalty System: Ensures creators and deployers earn from each asset sale, supporting a sustainable revenue model that incentivizes ongoing creation and participation. This is especially useful in markets where assets like data sets or creative prompts are continually reused and retain intrinsic value.
+
+    Decentralized Trading: Allows NFT owners to act as exchange agents who directly manage sales and negotiations within the asset framework, eliminating the need for intermediary brokers and central platforms.
+
+
+
 Contract Summary
 
 1. ERC721URIStorage Extension:
@@ -64,16 +77,6 @@ Helper Functions:
 
     calculateRoyaltyPublic: Exposes the royalty calculation logic for transparency and testing.
     getSalePrice: Provides public access to the sale price of a specific NFT, useful for buyers and third-party interfaces to verify pricing.
-
-Utility and Use Cases
-
-ROYALNFT is particularly suited for digital marketplaces dealing in unique digital assets like art, collectibles, and other NFT-backed items. It provides artists and creators with a platform to monetize their work not only through initial sales but also via ongoing royalties from subsequent transactions. The secure and decentralized trading mechanism empowers owners and maintains the integrity of transactions, fostering a robust digital economy around NFTs.
-
-Utility of the Contract
-
-    Royalty System: Ensures creators and deployers earn from each asset sale, supporting a sustainable revenue model that incentivizes ongoing creation and participation. This is especially useful in markets where assets like data sets or creative prompts are continually reused and retain intrinsic value.
-
-    Decentralized Trading: Allows NFT owners to act as exchange agents who directly manage sales and negotiations within the asset framework, eliminating the need for intermediary brokers and central platforms.
 
     Owner Economy: Facilitates an environment where every owner can dynamically set sale prices and directly benefit from market activities. This decentralized control promotes a more resilient and flexible marketplace.
 
