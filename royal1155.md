@@ -30,4 +30,4 @@ Utility and Applications
 
 The ROYAL1155 contract is particularly useful in digital marketplaces where artists and creators wish to monetize their digital creations without losing control over future resales. It supports a model where creators can receive continuous compensation for their creations, fostering a sustainable ecosystem for digital assets. This contract can be adapted for use in various domains, including digital art, gaming items, collectibles, and other digital goods that benefit from decentralized ownership and transaction verification provided by blockchain technology.
 
-In summary, ROYAL1155 leverages the flexibility of the ERC1155 standard combined with robust ownership and royalty management features to create a comprehensive solution for digital asset management and monetization.
+In summary, ROYAL1155 leverages the flexibility of the ERC1155 standard combined with robust ownership and royalty management features to create a comprehensive solution for digital asset management and monetization. ROYALYNFT 721 has undergone more extensive testing than this erc-1155 version.
