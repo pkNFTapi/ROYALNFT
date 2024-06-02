@@ -2,13 +2,15 @@
 immutable erc-721 NFT creator royalty broker with built in marketplace as owner controlled sale price<br /> 
 empowering creators as owners<br />
 
-The ROYALNFT.sol contract effectively enables a decentralized marketplace for unique digital assets using the ERC721 standard. It emphasizes the role of every NFT owner not just as a holder but as an active participant in the marketplace, with the capability to manage transactions directly related to their assets. Here's a concise overview of its utility and functions:
+The ROYALNFT.sol contract effectively enables a decentralized marketplace for unique digital assets using the ERC721 standard. It emphasizes the role of every owner as an active participant in the marketplace one mint away from becoming a creator.  Included within the asset is the capability to set the sale price as a decentralized event. 
 
-The ROYALNFT contract is an EVM-based smart contract developed for handling ERC721 tokens, which represent unique digital assets, underpinned by the OpenZeppelin libraries to ensure robust security and functionality. This contract integrates features such as token minting, dynamic pricing, secure sales transactions, and royalty distributions, catering to a decentralized marketplace where creators and deployers can derive ongoing value from secondary sales. Here is an external documentation detailing the structure and utility of the ROYALNFT contract:
+# utility and functions:
+
+The ROYALNFT contract is an EVM-based smart contract developed for handling ERC721 tokens which represent unique data assets. OpenZeppelin libraries are used to ensure robust security and functionality. This contract integrates features such as token minting, dynamic pricing, secure sales transactions, and royalty distributions, catering to a decentralized marketplace where creators and deployers can derive ongoing value from secondary sales. Here is an external documentation detailing the structure and utility of the ROYALNFT contract:
 
 # Utility and Use Cases
 
-ROYALNFT is particularly suited for digital marketplaces dealing in unique digital assets like art, collectibles, and other NFT-backed items. It provides artists and creators with a platform to monetize their work not only through initial sales but also via ongoing royalties from subsequent transactions. The secure and decentralized trading mechanism empowers owners and maintains the integrity of transactions, fostering a robust digital economy around NFTs.
+ROYALNFT is particularly suited for digital marketplaces dealing in unique digital assets incluing data collections and other digital commodoties. ROYALNFT provides artists and creators with a platform to monetize their through initial sales with the option of an ongoing royalties from subsequent transactions. The secure and decentralized trading mechanism empowers owners as creators maintaining the integrity of transactions facilitating a robust digital economy around data transfer.
 
 # Utility of the Contract
 
@@ -88,4 +90,4 @@ Core Functions
 
     Secure Transactions: Implements safe, non-reentrant transactions for asset sales, including automatic royalty calculations and payouts, which support a fair distribution of revenue among all stakeholders involved in the asset lifecycle.
 
-By integrating these features, the ROYALNFT contract facilitates a truly decentralized and owner-driven marketplace empowering owners as creators enhancing economic autonomy and participation in a royalty empowered data driven knowledge economy.
+By integrating these features, the ROYALNFT contract facilitates a truly decentralized and owner-driven marketplace empowering owners as creators enhancing economic autonomy and participation in a royalty empowered data driven knowledge economy. ROYALNFT is designed to the platform contract of the <a href="https://github.com/pkNFTapi/">pkNFTapi</a> suite of utility tools to foster royalty based data exchange within a completely decentralized immutable creator royalty.
