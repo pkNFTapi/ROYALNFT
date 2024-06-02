@@ -1,5 +1,5 @@
 # ROYALNFT
-immutable NFT creator royalty broker with built in marketplace as sale price<br />
+immutable NFT creator royalty broker with built in marketplace as sale price<br /> 
 enabling every owner to become a creator<br />
 
 The ROYALNFT.sol contract effectively enables a decentralized marketplace for unique digital assets using the ERC721 standard. It emphasizes the role of every NFT owner not just as a holder but as an active participant in the marketplace, with the capability to manage transactions directly related to their assets. Here's a concise overview of its utility and functions:
