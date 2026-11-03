@@ -1,4 +1,6 @@
 # ROYALNFT
+> **Next version: [`v2/`](v2/README.md).** Tokens stay soulbound until the royalty is paid. The contract below (V1) does not enforce that: `transferFrom` skips the royalty. V2 is not yet audited or deployed.
+
 immutable erc-721 NFT creator royalty broker with built in marketplace as owner controlled sale price<br /> 
 empowering creators as owners<br />
 
