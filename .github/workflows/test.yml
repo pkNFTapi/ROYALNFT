@@ -33,3 +33,39 @@ jobs:
       - name: Run forge tests
         working-directory: v2
         run: forge test -vv
+
+  slither:
+    name: Slither · ROYALNFT v2
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: stable
+
+      - name: Install libs
+        working-directory: v2
+        run: npm ci --no-audit --no-fund
+
+      # Pinned so a new Slither release can't turn the build red on its own.
+      - name: Install Slither
+        run: pip install slither-analyzer==0.11.6
+
+      - name: Slither · ROYALNFTv2
+        working-directory: v2
+        run: |
+          slither src/ROYALNFTv2.sol \
+            --filter-paths node_modules \
+            --exclude-low --exclude-informational --exclude-optimization \
+            --fail-high
