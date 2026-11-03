@@ -1,0 +1,35 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  forge-v2:
+    name: Forge · ROYALNFT v2
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: stable
+
+      # OpenZeppelin and forge-std are pinned by v2/package-lock.json.
+      - name: Install libs
+        working-directory: v2
+        run: npm ci --no-audit --no-fund
+
+      # Includes ROYALNFTv1Baseline.t.sol, which runs against the V1 contract at the repo root.
+      - name: Run forge tests
+        working-directory: v2
+        run: forge test -vv
